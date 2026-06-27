@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>List of students</h1>
+      <button id="get-students-btn">Get Students</button>
+      <table id="students-table">
+        <thead>
+          <tr>
+            <th>ID,</th>
+            <th>Name,</th>
+            <th>Age,</th>
+            <th>Course,</th>
+            <th>Skillls,</th>
+            <th>Email,</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <h2>Add new student</h2>
+      <form id="add-student-form">
+        <label>Name: <input type="text" id="name" required /></label>
+        <label>Age: <input type="number" id="age" required /></label>
+        <label>Course: <input type="text" id="course" required /></label>
+        <label
+          >Skills (Separate with commas):
+          <input type="text" id="skills" required
+        /></label>
+        <label>Email: <input type="email" id="email" required /></label>
+        <label>Registered: <input type="checkbox" id="isEnrolled" /></label>
+        <button type="submit">Add Student</button>
+      </form>
+    </div>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
